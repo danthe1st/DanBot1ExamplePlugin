@@ -14,9 +14,9 @@ public class HelloWorld implements Command {
 	}
 
 	@Override
-	public String help(String s) {
+	public String help() {
 		return "sends a Message with the content \"Hello World\"" +
-				"*Syntax*: "+s+"hello";
+				"*Syntax*: --hello";
 	}
 
 	public CommandType getCommandType() {

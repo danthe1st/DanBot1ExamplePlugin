@@ -296,4 +296,4 @@ buildNumber.properties
 # End of https://www.gitignore.io/api/java,maven,eclipse,intellij,intellij+iml,intellij+all
 
 # DanBot1 specific
-SERVER_SETTINGS
+DANBOT1_SETTINGS
