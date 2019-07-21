@@ -2,14 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.danthe1st</groupId>
   <artifactId>DanBot1ExamplePlugin</artifactId>
-  <version>4.0-alpha-1-SNAPSHOT</version>
+  <version>TEST</version>
   <name>DanBot1ExamplePlugin</name>
   <description>Example of a Plugin for DanBot1</description>
   <dependencies>
 		<dependency>
             <groupId>io.github.danthe1st</groupId>
 		    <artifactId>DanBot1</artifactId>
-		    <version>4.0-alpha-1-SNAPSHOT</version>
+		    <version>4.0-alpha-2-SNAPSHOT</version>
 		    <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -18,11 +18,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <compilerVersion>1.8</compilerVersion>
                 </configuration>
-                <version>2.3.2</version>
             </plugin>
         </plugins>
     </build>

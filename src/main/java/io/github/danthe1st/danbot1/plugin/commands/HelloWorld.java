@@ -1,5 +1,7 @@
 package io.github.danthe1st.danbot1.plugin.commands;
 
+import static io.github.danthe1st.danbot1.util.LanguageController.translate;
+
 import io.github.danthe1st.danbot1.commands.BotCommand;
 import io.github.danthe1st.danbot1.commands.Command;
 import io.github.danthe1st.danbot1.commands.CommandType;
@@ -10,13 +12,12 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 public class HelloWorld implements Command {
 
 	public void action(String[] args, MessageReceivedEvent event) {
-		STATIC.msg(event.getTextChannel(), "Hello World");
+		STATIC.msg(event.getTextChannel(),translate(event.getGuild(),"Hello"));
 	}
 
 	@Override
 	public String help() {
-		return "sends a Message with the content \"Hello World\"" +
-				"*Syntax*: --hello";
+		return "HelloHelp";
 	}
 
 	public CommandType getCommandType() {
